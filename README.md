@@ -1,4 +1,8 @@
+## Capstone project for Advanced Data Science specialization
+![alt text](./advanced-data-science-capstone.png)
+
 ## Project description
+
 I want to explore if fitness wearables improve people's discipline when it comes to doing sports.
 Unfortunately, such data is not available as wearable manufacturers probably don't want to disclose it even in anonymized form.
 The idea is that by looking at how the wearable is used 1 week/1 month/1 year/etc after it's activation, we can infer whether it's still actively used.
