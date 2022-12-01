@@ -17,13 +17,16 @@ I have 6 features that should be used to identify the output labels:
 I didn't want to use just one week in the beginning and the end, as it's more accurate to draw an average over several weeks, as there can be circumstances when people can't train.
 
 My assumption when building the dataset is that the following features have an impact on training discipline(might be biased and not necessarily objective, but Ok for the sake of the experiment):
+
 1) Age
 2) Training before the wearable was bought
 3) smoking
 4) alcohol consumption
 5) Body fat
+
 See data_generation notebook for more details:
-````
+
+````python
 coef = (1 - weight*(0 if 25 <= age <= 45 else 1)
 - weight*(not training_before)
 - weight*(smoking)
@@ -35,11 +38,12 @@ This research, if used on real data:
 1) Help in identifying user profiles which need special approach(nudging, social pressure) to increase retention and make them adopt sports more actively;
 2) Can also be used by wearable marketing teams to better understand their users.
 
-### Solution architecture
+## Solution architecture
+
 ![alt text](https://github.com/yuranos/advanced_data_science_capstone/blob/master/architecture.png?raw=true)
 
-
 ## Resources
+
 For structuring the project:
 
 [Cloud Garage Method](https://developer.ibm.com/articles/the-lightweight-ibm-cloud-garage-method-for-data-science/)
